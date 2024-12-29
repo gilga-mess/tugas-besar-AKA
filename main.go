@@ -27,13 +27,13 @@ func main() {
 	rand.Seed(time.Now().UnixNano())
 
 	var n int
-	n = 100
+	n = 100 // ubah n sesuai dengan ukuran input yang diinginkan
 	inputFlightData(n)
 	TF[n-1].origin = "B"
 	TF[n-1].destination = "C"
 
 	var choice string
-	choice = "2"
+	choice = "2" // ubah choice menjadi 1 untuk menggunakan algoritma iteratif dan 2 untuk menggunakan algoritma rekursif
 	if choice == "1" {
 		searchFlight("B", "C")	
 	} else if choice == "2" {
